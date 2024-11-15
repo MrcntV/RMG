@@ -1,39 +1,33 @@
-import React, { useState, useEffect } from "react";
-
-type Language = "fr" | "en" | "de";
+import React from "react";
+import { useTranslation } from "react-i18next";
 
 const LanguageSelector: React.FC = () => {
-  // Langue par défaut récupérée du localStorage ou "en"
-  const [language, setLanguage] = useState<Language>(
-    (localStorage.getItem("language") as Language) || "en"
-  );
+  const { i18n } = useTranslation();
 
-  // Fonction pour changer la langue
-  const handleLanguageChange = (lang: Language) => {
-    setLanguage(lang);
+  const changeLanguage = (lang: string) => {
+    i18n.changeLanguage(lang);
     localStorage.setItem("language", lang);
-    // Ici, tu peux ajouter ta logique pour changer la langue (par exemple avec i18n)
   };
 
   return (
     <div className="language-selector">
       <img
-        src="/flags/fr.svg"
+        src="/images/flags/fr.png"
         alt="Français"
-        className={`flag ${language === "fr" ? "active" : ""}`}
-        onClick={() => handleLanguageChange("fr")}
+        className="flag"
+        onClick={() => changeLanguage("fr")}
       />
       <img
-        src="/flags/en.svg"
+        src="/images/flags/en.png"
         alt="English"
-        className={`flag ${language === "en" ? "active" : ""}`}
-        onClick={() => handleLanguageChange("en")}
+        className="flag"
+        onClick={() => changeLanguage("en")}
       />
       <img
-        src="/flags/de.svg"
+        src="/images/flags/de.png"
         alt="Deutsch"
-        className={`flag ${language === "de" ? "active" : ""}`}
-        onClick={() => handleLanguageChange("de")}
+        className="flag"
+        onClick={() => changeLanguage("de")}
       />
     </div>
   );

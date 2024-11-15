@@ -10,13 +10,7 @@ const Headers: React.FC = () => {
       </div>
       <div className="containerlogo">
         <a className="" href="/">
-          <div className="">
-            <div className="LogoHeader">
-              <h1>RMG</h1>
-              <p>race motors group</p>
-              <p>geneva </p>
-            </div>
-          </div>
+          <img src="/images/logo/logo.png" alt="logo race motors group" />
         </a>
       </div>
       <div className="containerLanguage">

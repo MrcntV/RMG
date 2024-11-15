@@ -5,18 +5,17 @@
 }
 
 .flag {
-  width: 32px;
-  height: 32px;
+  width: 24px; /* Taille réduite pour des logos plus petits */
+  height: 24px;
   cursor: pointer;
-  opacity: 0.6;
-  transition: opacity 0.2s, transform 0.2s;
+  opacity: 0.7;
+  transition: transform 0.3s, opacity 0.3s;
+  border-radius: 50%; /* Donne un effet arrondi aux drapeaux */
 }
 
+/* Effet au survol */
 .flag:hover {
   opacity: 1;
-  transform: scale(1.1);
-}
-
-.flag.active {
-  opacity: 1;
+  transform: scale(1.2);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
