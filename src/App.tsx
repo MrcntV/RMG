@@ -3,12 +3,12 @@ import React from "react";
 // Importation des fichiers CSS
 import "./App.css";
 
-import "../src/styles/Components/Header.css";
-import "../src/styles/Components/Footer.css";
-import "../src/styles/Components/MenuBurger.css";
-import "../src/styles/Components/ScrollToTopButton.css";
+import "../src/styles/components/Header.css";
+import "../src/styles/components/Footer.css";
+import "../src/styles/components/MenuBurger.css";
+import "../src/styles/components/ScrollToTopButton.css";
 
-import "../src/styles/Pages/Accueil.css";
+import "../src/styles/screens/Accueil.css";
 
 // Importation des composants nécessaires
 import Footer from "./components/Footer";
