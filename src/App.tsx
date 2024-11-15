@@ -1,29 +1,28 @@
 import React from "react";
-import logo from "./logo.svg";
+
+// Importation des fichiers CSS
 import "./App.css";
 
-import Home from "./styles/screens/home";
+import "../src/styles/Components/Header.css";
+import "../src/styles/Components/Footer.css";
+import "../src/styles/Components/MenuBurger.css";
+import "../src/styles/Components/ScrollToTopButton.css";
 
-function App() {
+import "../src/styles/Pages/Accueil.css";
+
+// Importation des composants nécessaires
+import Footer from "./components/Footer";
+import Headers from "./components/header";
+import AnimRoutes from "./AnimRoutes";
+import ScrollToTopButton from "./components/ScrollToTopButton";
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <Home />
-    </div>
+    <>
+      <Headers />
+      <AnimRoutes />
+      <ScrollToTopButton />
+      <Footer />
+    </>
   );
 }
-
-export default App;
