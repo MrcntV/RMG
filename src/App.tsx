@@ -7,6 +7,7 @@ import "../src/styles/components/Header.css";
 import "../src/styles/components/Footer.css";
 import "../src/styles/components/MenuBurger.css";
 import "../src/styles/components/ScrollToTopButton.css";
+import "..src/styles/components/LanguageSelector.css";
 
 import "../src/styles/screens/Accueil.css";
 

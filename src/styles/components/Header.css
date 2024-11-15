@@ -3,9 +3,14 @@ header {
   animation: headerAnimation 0.2s ease-in-out forwards;
   animation-delay: 0.1s;
   animation-duration: 1s;
-  width: auto;
-  height: auto;
-  left: calc(15vw - 50px);
+  width: 100vw;
+  height: 5vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: black;
+  padding-left: 5vw;
+  padding-right: 5vw;
 }
 
 @keyframes headerAnimation {
@@ -148,7 +153,6 @@ header {
     -webkit-animation-duration: 1s;
     animation-duration: 1s;
     height: auto;
-    left: calc(15vw - 75px);
     opacity: 0;
     width: auto;
   }

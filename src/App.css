@@ -112,7 +112,6 @@ a:hover {
 header {
   position: fixed;
   width: auto;
-  left: 15vw;
   z-index: 1000;
   opacity: 0;
 }

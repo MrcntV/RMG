@@ -72,9 +72,7 @@ const MenuBurger: React.FC = () => {
 
   const menuItems = [
     { label: "Accueil", path: "/" },
-    { label: "Événements", path: "/Evenements" },
-    { label: "Mitchy", path: "/Mitchy" },
-    { label: "Boutique", path: "/Boutique" },
+    { label: "Nos véhicules", path: "/NosVehicules" },
     { label: "Contact", path: "/Contact" },
   ];
 
@@ -101,7 +99,8 @@ const MenuBurger: React.FC = () => {
         <div className="navbar_links_right">
           <motion.div className="navbar_links_right_left">
             <p>
-              © PULSAR inc. {new Date().getFullYear()} | SITE BY V.MARCONNET
+              © Race Motors Group. {new Date().getFullYear()} | SITE BY
+              V.MARCONNET
             </p>
           </motion.div>
 
@@ -133,10 +132,6 @@ const MenuBurger: React.FC = () => {
             <motion.div className="navbar_links_right-lien">
               <NavLink to="/cgv" onClick={closeMenu}>
                 MENTIONS LEGALES |
-              </NavLink>
-              <NavLink to="/cgv" onClick={closeMenu}>
-                {" "}
-                CGV |
               </NavLink>
               <NavLink to="/cgv" onClick={closeMenu}>
                 POLITIQUE DE CONFIDENTIALITE

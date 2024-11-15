@@ -9,8 +9,7 @@ const AnimRoutes = () => {
 
   return (
     <AnimatePresence mode="wait">
-      <Routes key={location.pathname} location={location}>
-        {/* Route pour la page d'accueil */}
+      <Routes location={location} key={location.pathname}>
         <Route path="/" element={<Home />} />
       </Routes>
     </AnimatePresence>

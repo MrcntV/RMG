@@ -1,0 +1,22 @@
+.language-selector {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.flag {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  opacity: 0.6;
+  transition: opacity 0.2s, transform 0.2s;
+}
+
+.flag:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+
+.flag.active {
+  opacity: 1;
+}
